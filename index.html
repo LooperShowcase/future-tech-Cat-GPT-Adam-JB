@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cat gpt</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Cat gpt</h1>
+
+    <button onclick="speak();" style="background-color: black;">
+      <img src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/speaker-icon-18-256.png"  height="30px">
+      
+    </button>
+    <div class="chat-container">
+      <h1></h1>
+      <div id="chat-box"></div>
+      <form
+      onsubmit="event.preventDefault();
+      conversationUserAdd(document.getElementById('userInput').value);
+      openai_test();
+      ">
+        <input type="text" id="userInput" placeholder="Type a message..." />
+        <button id="sendButton">
+          <img src="https://icons-for-free.com/iconfiles/png/512/send+icon-1320185654900887696.png" width="5%">
+        </button>
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
